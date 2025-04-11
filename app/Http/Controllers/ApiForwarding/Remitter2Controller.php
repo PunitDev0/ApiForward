@@ -23,7 +23,7 @@ class Remitter2Controller extends Controller
 
     public function queryRemitter(Request $request)
     {
-
+        $requestIp = $request->ip(); // gets client IP
         try {
             // Validate the mobile number
             $validator = Validator::make($request->all(), [
@@ -50,6 +50,7 @@ class Remitter2Controller extends Controller
             return response()->json([
                 'success' => true,
                 'data' => $response->json(),
+                'ip' => $requestIp
             ]);
 
         } catch (\Exception $e) {
