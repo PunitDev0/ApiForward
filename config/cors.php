@@ -14,7 +14,7 @@ return [
     |
     */
  
-    'paths' => ['api/*'], // Allow API requests
+    'paths' => ['*'], // Allow API requests
  
     'allowed_methods' => ['*'], // Allow all HTTP methods (GET, POST, PUT, DELETE, etc.)
  
