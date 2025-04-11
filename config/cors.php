@@ -2,7 +2,7 @@
 
 return [
 
-    'paths' => ['*'], // Make sure to include your custom path
+    'paths' => ['api/*'], // Make sure to include your custom path
 
     'allowed_methods' => ['*'],
 
