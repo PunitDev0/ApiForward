@@ -24,9 +24,9 @@ class VerifyApiKeyAndIP
             return response()->json(['error' => 'Invalid API key'], 401);
         }
 
-        if (!$recordIP) {
-            return response()->json(['error' => 'IP address not allowed'], 403);
-        }
+        // if (!$recordIP) {
+        //     return response()->json(['error' => 'IP address not allowed'], 403);
+        // }
 
         return $next($request);
     }
