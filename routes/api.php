@@ -61,7 +61,7 @@ Route::prefix('utility')->group(function () {
     Route::post('/billPayment/fetchUtilityStatus', [UtilitybillPaymentController::class, 'fetchUtilityStatus']);
 
     Route::get('/FastagRecharge/OperatorList', [FastagRechargeController::class, 'fastagRechargeOperatorList']);
-    Route::get('/FastagRecharge/getConsumerDetails', [FastagRechargeController::class, 'getConsumerDetails']);
+    Route::post('/FastagRecharge/getConsumerDetails', [FastagRechargeController::class, 'getConsumerDetails']);
 
 
 //Api Route for FastagRechargeController end;
